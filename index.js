@@ -19,7 +19,7 @@ console.log(msgs.getTitle());
 
 /** 3. Parse the command */
 program
-    .version("0.0.1")
+    .version("0.0.2")
     .description("This is a simple CLI util to create Angular 2 applications.")
     .usage("<app name>")
     .arguments("<app>")
