@@ -25,7 +25,7 @@ const directoryExists = (dir) => {
 
 /** Resolve the path for the given directory or file */
 const resolvePath = (dir) => {
-    return path.resolve(__dirname, sanitize(dir, { replacement: "-" }));
+    return path.resolve(process.cwd(), sanitize(dir, { replacement: "-" }));
 };
 
 /** Remove the unnecessary directories and files from the app path */
