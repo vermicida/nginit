@@ -1,10 +1,10 @@
 # nginit
 
-This is a simple CLI util to create Angular 2 applications. `nginit` clones the [ng2-boilerplate](https://github.com/vermicida/ng2-boilerplate) repository to your system and removes all the unnecessary data from it, like Git, LICENSE or README files. This is just a fast way to create Angular 2 applications that runs _out of the box_; if you want to take advantage of testing, linting or serving your app, to quote some, I highly recommend you to use [Angular2 CLI](https://cli.angular.io).
-
 [![NPM](https://nodei.co/npm/nginit.png?compact=true)](https://nodei.co/npm/nginit/)
 
 [![npm version](https://badge.fury.io/js/nginit.svg)](https://badge.fury.io/js/nginit) [![Dependency Status](https://david-dm.org/vermicida/nginit.svg)](https://david-dm.org/vermicida/nginit)
+
+This is a simple CLI util to create Angular 2 applications. `nginit` clones the [ng2-boilerplate](https://github.com/vermicida/ng2-boilerplate) repository to your system and removes all the unnecessary data from it, like Git, LICENSE or README files. This is just a fast way to create Angular 2 applications that runs _out of the box_; if you want to take advantage of testing, linting or serving your app, to quote some, I highly recommend you to use [Angular2 CLI](https://cli.angular.io).
 
 ## Getting started
 
