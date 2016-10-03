@@ -35,6 +35,29 @@ const cleanAppPath = (appPath) => {
     });
 };
 
+/** Remove the unnecessary data from the cloned package.json */
+const cleanPackageJson = (appPath) => {
+    const jsonPath = `${appPath}/package.json`;
+    // Read the package.json document.
+    const jsonData = fs.readJsonSync(jsonPath, { throw: false });
+    if (jsonData) {
+        const appName = path.basename(appPath);
+        // Set some property values.
+        jsonData.name = appName;
+        jsonData.description = `My amazing application ${appName}.`;
+        jsonData.version = "1.0.0";
+        jsonData.license = "ISC";
+        // Remove unnecessary properties.
+        delete jsonData.author;
+        delete jsonData.homepage;
+        delete jsonData.repository;
+        delete jsonData.bugs;
+        delete jsonData.keywords;
+        // Write down the changes.
+        try { fs.writeJsonSync(jsonPath, jsonData); } catch(err) { /* Do nothing */ }
+    }
+};
+
 /** Clone the repository into the given path */
 const cloneRepo = (appPath, cb) => {
     git.clone(GITHUB_REPOSITORY, appPath, (err) => {
@@ -43,6 +66,7 @@ const cloneRepo = (appPath, cb) => {
         }
         else {
             cleanAppPath(appPath);
+            cleanPackageJson(appPath);
             cb();
         }
     });
