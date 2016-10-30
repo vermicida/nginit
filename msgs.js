@@ -30,7 +30,7 @@ const getCloneErrorText = () => {
 
 /** Get the text to use when the repository cloning was successfully */
 const getCloneSuccessText = () => {
-    return chalk.green("Ready! Remember to run 'npm install' within the app folder.");
+    return chalk.green("Ready! Remember to run 'npm install' within the app folder.\n");
 };
 
 /** Module */
