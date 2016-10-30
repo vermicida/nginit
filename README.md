@@ -24,17 +24,13 @@ $ nginit heroes
 
 You will get something like this:
 ```bash
-Ready! Remember to run the following npm tasks within the app folder:
-
-  1) npm install
-  2) npm run typings install
+Ready! Remember to run 'npm install' within the app folder.
 ```
 
 So go into the application directory and run those npm tasks:
 ```bash
 $ cd heroes
 $ npm install
-$ npm run typings install
 ```
 
 And finally, run the server:
