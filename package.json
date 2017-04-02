@@ -1,6 +1,6 @@
 {
   "name": "nginit",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "This is a simple CLI util to create Angular 2 applications.",
   "license": "MIT",
   "homepage": "https://github.com/vermicida/nginit#readme",
