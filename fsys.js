@@ -7,8 +7,13 @@ const path = require("path");
 const sanitize = require("sanitize-filename");
 
 /** Settings */
-const GITHUB_REPOSITORY = "https://github.com/vermicida/ng2-boilerplate";
-const UNNECESSARY_ITEMS = [".git", ".gitignore", "LICENSE", "README.md"];
+const GITHUB_REPOSITORY = "https://github.com/vermicida/ng-boilerplate";
+const UNNECESSARY_ITEMS = [
+    ".git",
+    ".gitignore",
+    "LICENSE",
+    "README.md"
+];
 
 /** Check if the given directory exists */
 const directoryExists = (dir) => {

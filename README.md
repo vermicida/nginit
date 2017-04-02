@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/nginit.svg)](https://badge.fury.io/js/nginit) [![Dependency Status](https://david-dm.org/vermicida/nginit.svg)](https://david-dm.org/vermicida/nginit)
 
-This is a simple CLI util to create Angular 2 applications. `nginit` clones the [ng2-boilerplate](https://github.com/vermicida/ng2-boilerplate) repository to your system and removes all the unnecessary data from it, like Git, LICENSE or README files. This is just a fast way to create Angular 2 applications that runs _out of the box_; if you want to take advantage of testing, linting or serving your app, to quote some, I highly recommend you to use [Angular2 CLI](https://cli.angular.io).
+This is a simple CLI util to create Angular applications. `nginit` clones the [ng2-boilerplate](https://github.com/vermicida/ng2-boilerplate) repository to your system and removes all the unnecessary data from it, like Git, LICENSE or README files. This is just a fast way to create Angular applications that runs _out of the box_; if you want to take advantage of testing, linting or serving your app, to quote some, I highly recommend you to use [Angular CLI](https://cli.angular.io).
 
 ## Getting started
 
@@ -15,9 +15,9 @@ Install `nginit` globally running this command from your terminal:
 $ npm install nginit -g
 ```
 
-## Seeding Angular 2 apps
+## Seeding Angular apps
 
-Wherever you want to create a new Angular 2 app, execute `nginit` and pass it a name for your app:
+Wherever you want to create a new Angular app, execute `nginit` and pass it a name for your app:
 ```bash
 $ nginit heroes
 ```
@@ -38,7 +38,7 @@ And finally, run the server:
 $ npm start
 ```
 
-And that's all. You're ready to start coding your new Angular 2 app.
+And that's all. You're ready to start coding your new Angular app.
 
 ## License
 
